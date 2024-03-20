@@ -5,16 +5,15 @@ class Fibo
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the digit:");
-		int i=sc.nextInt();
-
+		int n=sc.nextInt();
 		System.out.println(fib(n));
 	}
 	
 	static int fib(int n)
 	{
-		if(i==1) return 0;
-		if(i==2) return 1;
-		
-		return fib(i-1)+fib(i-2);	
+		if(n==1) return 0;
+		if(n==2) return 1;
+
+		return fib(n-2)+fib(n-1);	
 	}
 }
